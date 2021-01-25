@@ -43,6 +43,6 @@ cv2.imwrite('[Output name].jpg', img)
 
 Examples are in `img` folder: 
 
-![Input Image](img/input1.png)
+![Input Image](/img/input1.png)
 
-![Output Image](img/output1.png)
+![Output Image](/img/output1.png)
