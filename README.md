@@ -8,7 +8,7 @@ This is the project about counting the number of items in images by algorithms. 
 
   Item detection based on methods provided by [OpenCV](https://opencv.org/) package, include *image grayscale*, *image binarization*, *edge detector* and *drawing edges*. 
 
-- [ ] Convolutional Neural Network Based Algorithm
+- [x] Convolutional Neural Network Based Algorithm
 
   Item detection based on OpenCV method will meet the problem that the accuracy is poor if items get together. To improve this, we prefer to use some methods based on machine learning, the most basic model is CNN. 
 
