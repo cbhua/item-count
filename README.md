@@ -1,48 +1,54 @@
-# Item Count Algorithms 
+# Item Count Tool 
 
-This is the project about counting the number of items in images by algorithms. This is a working on project, will update time by time. 
+This is a tool for counting items within an image based on OpenCV. 
 
-# Features
+## Features
 
-- [x] OpenCV Based Algorithm 
+OpenCV Based Algorithm:
 
-  Item detection based on methods provided by [OpenCV](https://opencv.org/) package, include *image grayscale*, *image binarization*, *edge detector* and *drawing edges*. 
+Item detection based on methods provided by [OpenCV](https://opencv.org/) package, include *image grayscale*, *image binarization*, *edge detector* and *drawing edges*. 
 
-- [x] Convolutional Neural Network Based Algorithm
+Easy to Use: 
 
-  Item detection based on OpenCV method will meet the problem that the accuracy is poor if items get together. To improve this, we prefer to use some methods based on machine learning, the most basic model is CNN. 
+Simple structure for using. Put image there, and run. 
 
-# Requirements
+Tutorial Provided:
 
-``` Python
-Python Version: 3.8 or later
-Python Packages: PyTorch
-```
+If you want to understand how the tool runs, we provide an indetail tutorial in `test`. There are cases for each processing step, showing the performance, help you to know what to fix to get a better result.  
 
-# How to use
-
-[Download](https://github.com/cbhua/project-item-count/archive/main.zip) or [Clone](https://github.com/cbhua/project-item-count.git) this repository.
-
-## OpenCV Based Algorithm
-
-Run the Jupyter Notebook file to generate the counting result. 
-
-You can choose your input image at `Load Data` part: 
+## Requirements
 
 ``` Python
-# Load Data
-img = cv2.imread("[You image name].jpg") 
+Python Version: 3.6 or later
+Python Packages: numpy, cv2, matplotlib
 ```
 
-And the result will be output at `Show Results` part:
+## Structure
 
-``` Python
-# Show Results
-cv2.imwrite('[Output name].jpg', img)
-```
+- `data`: images to be processed and results will be here 
+- `figs`: figures for readme
+- `src`: source code for tool
+- `test`: test cases help users to understand how the tool running 
 
-Examples are in `img` folder: 
+## How to use
 
-![Input Image](/opencv-based/img/input1.png)
+**Step 1**. [Download](https://github.com/cbhua/tool-item-count/archive/main.zip) or [Clone](https://github.com/cbhua/tool-item-count.git) this repository.
 
-![Output Image](/opencv-based/img/output1.png)
+![Files](figs/download.png)
+
+**Step 2**. Put images to be processed in `/data/input`, support `.png` and `.jpg` files. 
+
+**Step 3**. Change the parameters within `config.ini` if needed. We provided a series of tests within `/test/test.ipynb` to help you understand how the parameteres work. 
+
+![Config](figs/config.png)
+
+**Step 4**. Run `main.py` by `python3 main.py`, all images within input will be processed and results will be saved to `/data/output` with the same name of inputs. 
+
+![Run](figs/run.png)
+
+## Examples
+
+<img src="data/input/input1.png" alt="Input Image" style="zoom:67%;" />
+
+<img src="data/output/input1.png" alt="Output Image" style="zoom:67%;" />
+
