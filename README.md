@@ -1,8 +1,8 @@
-# Item Count Tool 
+# 🔬 Item Count Tool 
 
 This is a tool for counting items within an image based on OpenCV. 
 
-## Features
+## 🏷 Features
 
 OpenCV Based Algorithm:
 
@@ -16,21 +16,21 @@ Tutorial Provided:
 
 If you want to understand how the tool runs, we provide an indetail tutorial in `test`. There are cases for each processing step, showing the performance, help you to know what to fix to get a better result.  
 
-## Requirements
+## ⚙️ Requirements
 
 ``` Python
 Python Version: 3.6 or later
 Python Packages: numpy, cv2, matplotlib
 ```
 
-## Structure
+## 🔧 Structure
 
 - `data`: images to be processed and results will be here 
 - `figs`: figures for readme
 - `src`: source code for tool
 - `test`: test cases help users to understand how the tool running 
 
-## How to use
+## 💾 How to use
 
 **Step 1**. [Download](https://github.com/cbhua/tool-item-count/archive/main.zip) or [Clone](https://github.com/cbhua/tool-item-count.git) this repository.
 
@@ -46,7 +46,7 @@ Python Packages: numpy, cv2, matplotlib
 
 ![Run](figs/run.png)
 
-## Examples
+## 📊 Examples
 
 <img src="data/input/input1.png" alt="Input Image" style="zoom:67%;" />
 
